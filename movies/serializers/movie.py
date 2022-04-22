@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from movies.serializeers.review import ReviewListSerializer
+from .review import ReviewListSerializer
 from ..models import Movie, Actor
 
 

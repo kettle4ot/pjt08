@@ -3,9 +3,9 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import Actor, Movie, Review
-from .serializeers.actor import ActorListSerializer, ActorSerializer
-from .serializeers.movie import MovieListSerializer, MovieSerializer
-from .serializeers.review import ReviewListSerializer, ReviewSerializer
+from .serializers.actor import ActorListSerializer, ActorSerializer
+from .serializers.movie import MovieListSerializer, MovieSerializer
+from .serializers.review import ReviewListSerializer, ReviewSerializer
 
 # Create your views here.
 @api_view(['GET'])
