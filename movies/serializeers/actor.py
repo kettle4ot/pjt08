@@ -6,7 +6,7 @@ from ..models import Actor, Movie
 class ActorListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Actor
-        fields = '__all__'
+        fields = ('id', 'name',)
 
 
 class ActorSerializer(serializers.ModelSerializer):
