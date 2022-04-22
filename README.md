@@ -70,20 +70,18 @@
 
 6. git push
 
+7. **오류**
 
+   * json 파일 받아오기
 
-#### 오류
+     ```
+     $ python manage.py migrate
+     $ python manage.py loaddata actors.json movies.json reviews.json
+     ```
 
-* json 파일 받아오기
+   * 원인: 아직 model이 만들어지지 않아서 json 파일을 받아올 수 없었다.
 
-  ```
-  $ python manage.py migrate
-  $ python manage.py loaddata actors.json movies.json reviews.json
-  ```
-
-* 원인: 아직 model이 만들어지지 않아서 json 파일을 받아올 수 없었다.
-
-* 해결방법: model 먼저 만들고 json 파일 받아오기
+   * 해결방법: model 먼저 만들고 json 파일 받아오기
 
 
 
